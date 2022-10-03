@@ -43,14 +43,12 @@ def randBoard(grid):
     for i in range (len(grid)):
         for j in range (len(grid[i])):
             grid[i][j] = rand.randint(0,9)
-
-            '''
+            
             # Break if too many non-zero digits appear
             if(grid[i][j] != 0):
                 nonZeroDecimals += 1
                 if(nonZeroDecimals > 30):
                     break
-            '''
 
     # Set global variable randGrid equal to local variable grid
     randGrid = grid
